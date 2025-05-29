@@ -1,4 +1,4 @@
-*Берет информацию из input:*
+*Берет информацию из input, так же любой введеный ответ юзера приводит к нижниму регистру:*
 
     def get_keyword():
         return input("Введите ключевое слово для поиска: ").strip().lower()
@@ -6,7 +6,7 @@
 
     def filter_candidates(candidates, keyword):
         return [c for c in candidates if keyword in c[3].lower()]
-*Выводит результаты поиска:*
+*Выводит результаты поиска на экран:*
 
     def display_results(matches):
         if not matches:
